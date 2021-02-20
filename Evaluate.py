@@ -10,9 +10,9 @@ import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
-import Datasets
+from RAFT.core import Datasets
 from RAFT.core.utils import Flow_viz
-from utils import Frame_utils
+from RAFT.core.utils import Frame_utils
 
 from RAFT.core.Raft import RAFT
 from RAFT.core.utils.Utils import InputPadder, forward_interpolate
