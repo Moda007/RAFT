@@ -15,9 +15,9 @@ import torch.optim as optim
 import torch.nn.functional as F
 
 from torch.utils.data import DataLoader
-from raft import RAFT
-import evaluate
-import datasets
+from RAFT.core.Raft import RAFT
+from RAFT import Evaluate
+from RAFT.core import Datasets
 
 from torch.utils.tensorboard import SummaryWriter
 
@@ -226,7 +226,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_steps', type=int, default=100000)
     parser.add_argument('--batch_size', type=int, default=6)
     parser.add_argument('--image_size', type=int, nargs='+', default=[384, 512])
-    parser.add_argument('--gpus', type=int, nargs='+', default=[0,1])
+    parser.add_argument('--gpus', type=int, nargs='+', default=[0])
     parser.add_argument('--mixed_precision', action='store_true', help='use mixed precision')
 
     parser.add_argument('--iters', type=int, default=12)
