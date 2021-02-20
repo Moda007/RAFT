@@ -1,6 +1,6 @@
 import torch
 import torch.nn.functional as F
-from utils.Utils import bilinear_sampler, coords_grid
+from RAFT.core.utils.Utils import bilinear_sampler, coords_grid
 
 try:
     import alt_cuda_corr

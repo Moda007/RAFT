@@ -11,8 +11,8 @@ import random
 from glob import glob
 import os.path as osp
 
-from utils import Frame_utils
-from utils.Augmentor import FlowAugmentor, SparseFlowAugmentor
+from RAFT.core.utils import Frame_utils
+from RAFT.core.utils.Augmentor import FlowAugmentor, SparseFlowAugmentor
 
 
 class FlowDataset(data.Dataset):
